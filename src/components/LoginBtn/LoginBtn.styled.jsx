@@ -8,5 +8,6 @@ export const Btn = styled('button')(() => {
     padding: '7px',
     borderRadius: '5px',
     fontSize: '20px',
+    marginRight: '65px',
   };
 });
