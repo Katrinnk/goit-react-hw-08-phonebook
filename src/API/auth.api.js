@@ -14,7 +14,6 @@ const deleteToken = () => {
 
 export const signUp = async body => {
   const { data } = await instance.post(`users/signup`, body);
-  console.log('data', data);
   setToken(data.token);
   return data;
 };
@@ -27,7 +26,6 @@ export const signIn = async body => {
 
 export const refresh = async () => {
   const { data } = await instance.get(`users/current`);
-  console.log('data', data);
   return data;
 };
 

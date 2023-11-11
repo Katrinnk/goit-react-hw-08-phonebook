@@ -2,7 +2,6 @@ const FormRegistration = ({ registration }) => {
   const handleSubmit = evt => {
     evt.preventDefault();
     const { name, email, password } = evt.target.elements;
-    console.log('name', name.value);
     registration({
       name: name.value,
       email: email.value,
